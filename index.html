@@ -1,16 +1,27 @@
-<div class="ratio">
-  <iframe width="600" height="450" src="https://lookerstudio.google.com/embed/reporting/af98188f-528c-48f4-9c6d-55f32c112fe4/page/IWYWF"
-    frameborder="0" allowfullscreen 
-    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
-    loading="eager"
-    referrerpolicy="strict-origin-when-cross-origin"
-    style="border:0;width:100%;height:100%;">
-</iframe>
+<!-- Container melebar penuh -->
+<div class="wide">
+  <div class="ratio-16x9">
+    <iframe
+      src="https://lookerstudio.google.com/embed/reporting/af98188f-528c-48f4-9c6d-55f32c112fe4/page/IWYWF"
+      title="DKP Provinsi Lampung"
+      loading="lazy" allowfullscreen
+      referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  </div>
 </div>
 
 <style>
-  .ratio{position:relative;width:100%;padding-bottom:62.5%; /* 16:10 */}
-  .ratio > iframe{position:absolute;inset:0}
+  .wide{width:100%;}
+  .ratio-16x9{
+    position:relative;
+    width:100%;
+    padding-bottom:56.25%; /* 720/1280 * 100 = 56.25% */
+    overflow:hidden; border:0;
+  }
+  .ratio-16x9 > iframe{
+    position:absolute; inset:0; width:100%; height:100%; border:0;
+  }
 </style>
+
+
 
 
